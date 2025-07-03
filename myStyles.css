@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');    
+.border_hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.li_border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+.border_hover:hover .li_border {
+    width: 100%;
+    background-color: red;
+    
+}
+
+  .sticky-bg1,.sticky-bg2,.sticky-bg3{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-image: url('/img/ghy_logo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .sticky-bg2{
+    background-image: url("/img/gym_img.jpg");
+
+  }
+   .sticky-bg3{
+    background-image: url(" https://healthyhkg.com/wp-content/uploads/2019/09/70477390_422422131713659_8304560845841498112_o.jpg");
+   
+  }
+ 
+
+  .content {
+    height: fit-content;
+    background-color: white ;
+    z-index: 1;
+    position: relative;
+  }

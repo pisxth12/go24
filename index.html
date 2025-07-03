@@ -1,0 +1,335 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="myStyles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .new_header {
+        width: 100%;
+        background-color: white;
+        justify-content: space-between;
+
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header absolute w-full">
+        <nav>
+          <div class="navigation w-full h-[21px] text-black hidden lg:block">
+            <div
+              class="language flex max-w-maxW mx-auto justify-end items-center gap-2 px-3"
+            >
+              <div class="chinese hover:text-red-500 cursor-pointer">繁體</div>
+              <div class="english hover:text-red-500 cursor-pointer">ENG</div>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="lg:flex mx-auto items-center p-3 max-w-[1280px] h-[80px] bg-transparent justify-center hidden"
+        >
+          <figure class="logo w-[250px] flex my-auto">
+            <img
+              class="flex items-center my-auto"
+              src="/img/fitness_logo.png"
+              alt=""
+            />
+          </figure>
+          <ul
+            class="info flex gap-4 font-jura font-semibold text-lg my-auto w-full justify-around z-20"
+          >
+            <li class="border_hover">
+              <span>Home</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>About</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Classes</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Price</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Franchise</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Trainers</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Locations</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Sceture</span>
+              <div class="li_border"></div>
+            </li>
+            <li class="border_hover">
+              <span>Career</span>
+              <div class="li_border"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="new_heade px-3 max-w-maxW bg-white mx-auto flex justify-between items-center lg:hidden fixed w-full z-30"
+        >
+          <figure class="h-[80px] my-auto flex items-center">
+            <img class="w-[200px]" src="/img/fitness_logo.png" alt="" />
+          </figure>
+          <ul class="my-auto">
+            <button
+              class="btns p-3 text-3xl"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">
+                  <img class="w-[100px]" src="/img/fitness_logo.png" alt="" />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body bg-black text-white">
+                <ul class="info font-jura font-bold text-3xl">
+                  <li class="py-2 cursor-pointer hover:text-slate-400">Home</li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    About
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Classes
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Price
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Franchise
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Trainers
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Locations
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Sceture
+                  </li>
+                  <li class="py-2 cursor-pointer hover:text-slate-400">
+                    Career
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div
+      class="banner h-screen bg-gray-400 flex justify-center items-center flex-col"
+    >
+      <figure class="max-w-[580px] z-10">
+        <img class="z-50" src="/img/fitness-slide.png" alt="" />
+      </figure>
+      <div
+        class="color_banner w-[100vw] h-[100vw] max-w-[400px] max-h-[400px] bg-white absolute blur-3xl"
+      ></div>
+      <div class="btn_banner">
+        <div class="btn_2 flex gap-3 text-white">
+          <button
+            class="uppercase bg-red-600 border-2 border-red-600 hover:bg-inherit hover:text-red-600 px-3 py-2 font-jura"
+          >
+            Locaion
+          </button>
+          <button
+            class="uppercase bg-red-600 border-2 border-red-600 hover:bg-inherit hover:text-red-600 px-3 py-2 font-jura"
+          >
+            Join now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="notifi grid lg:grid-cols-3">
+        <div
+          class="box py-5 flex justify-center font-jura items-center font-bold text-3xl border-2 border-b-2"
+        >
+          No Contract
+        </div>
+        <div
+          class="box py-5 flex justify-center font-jura items-center font-bold text-3xl border-2 border-b-2"
+        >
+          No Contract
+        </div>
+        <div
+          class="box py-5 flex justify-center font-jura items-center font-bold text-3xl border-2 border-b-2"
+        >
+          No Hassle
+        </div>
+      </div>
+    </div>
+
+    <div class="img-content !bg-red-400 !h-fit w-full">
+
+
+
+      <div class="sticky-bg1"></div>
+      <div class="absolute-for-sticky-content h-[100px] w-full  absolute">   </div>
+         <div class="sticky-content  flex justify-center  relative ">
+            <div class="wrap-sticky-content  h-fit overflow-hidden ">
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3">Free</h1>
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3 ">Weights</h1>
+            </div>
+          </div>
+      <div class="content flex justify-center">
+        <div class="content flex justify-center items-center p-3 max-w-[700px] ">
+           <div class="more-wrap">
+              <p class="text-2xl font-oswald text-center">Build <span class="font-bold text-2xl">strength, balance </span> and <span class="font-bold text-2xl">coordination</span> in our free Weights area. With our <span class="font-bold text-2xl">dumbbells</span> ranging from 1-60kg's and a huge range of <span class="font-bold text-2xl">barbells </span> to choose from there are definitely <span class="font-bold text-2xl">gains</span> to be made.</p>
+              <div class="btn-box flex justify-center w-full">
+               <button class="  px-4 py-2 border-red-600 border-2 bg-red-600 hover:bg-white">JOIN NOW</button>
+              </div>
+           </div>
+        </div>
+      </div>
+      
+      <div class="sticky-bg3"></div>
+         <div class="absolute-for-sticky-content h-[100px] w-full  absolute">   </div>
+         <div class="sticky-content  flex justify-center  relative ">
+            <div class="wrap-sticky-content  h-fit overflow-hidden ">
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3">Resistance</h1>
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3 ">Machines</h1>
+            </div>
+          </div>
+      <div class="content flex justify-center">
+        <div class="content flex justify-center items-center p-3 max-w-[700px] ">
+           <div class="more-wrap">
+              <p class="text-2xl font-oswald text-center">Build <span class="font-bold text-2xl">strength, balance </span> and <span class="font-bold text-2xl">coordination</span> in our free Weights area. With our <span class="font-bold text-2xl">dumbbells</span> ranging from 1-60kg's and a huge range of <span class="font-bold text-2xl">barbells </span> to choose from there are definitely <span class="font-bold text-2xl">gains</span> to be made.</p>
+              <div class="btn-box flex justify-center w-full">
+               <button class="  px-4 py-2 border-red-600 border-2 bg-red-600 hover:bg-white">JOIN NOW</button>
+              </div>
+           </div>
+        </div>
+      </div>
+       <div class="sticky-bg2"></div>
+         <div class="absolute-for-sticky-content h-[100px] w-full  absolute">   </div>
+         <div class="sticky-content  flex justify-center  relative ">
+            <div class="wrap-sticky-content  h-fit overflow-hidden ">
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3">Resistance</h1>
+              <h1 class="text-fs60 lg:text-fs100 lg:-my-5 flex justify-center px-3 text-white font-ultra-bold uppercase -my-3 ">Machines</h1>
+            </div>
+          </div>
+      <div class="content flex  justify-center  relative !h-fit">
+        <div class="content flex justify-center items-center p-3 !w-full !h-fit">
+           <div class="more-wrap max-w-[700px]">
+              <p class="text-2xl font-oswald text-center">Build <span class="font-bold text-2xl">strength, balance </span> and <span class="font-bold text-2xl">coordination</span> in our free Weights area. With our <span class="font-bold text-2xl">dumbbells</span> ranging from 1-60kg's and a huge range of <span class="font-bold text-2xl">barbells </span> to choose from there are definitely <span class="font-bold text-2xl">gains</span> to be made.</p>
+              <div class="btn-box flex justify-center w-full">
+               <button class="  px-4 py-2 border-red-600 border-2 bg-red-600 hover:bg-white">JOIN NOW</button>
+              </div>
+           </div>
+        </div>
+      
+      </div>
+    </div>
+    <footer class="bg-black text-white py-8 px-4 ">
+  <div class="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-5 py-5">
+    
+    <!-- Logo & Caption -->
+    <div class="text-center lg:text-left">
+      <figure class="mx-auto lg:mx-0 w-[180px] mb-4">
+        <img src="/img/logo_white.png" alt="GO24 Fitness Logo">
+      </figure>
+      <p class="font-oswald text-gray-300 text-lg mb-2">
+        The leading 24-hour, no contract gym in Hong Kong.
+      </p>
+      <div class="text-sm text-gray-400">
+        <p>© 2025</p>
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="mx-auto text-start w-[200px]">
+      <h4 class="text-xl font-bold mb-4 uppercase ">GO24 Fitness</h4>
+      <ul class="space-y-2">
+        <li class="hover:text-gray-300 cursor-pointer transition">Home</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">About GO24 Fitness</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">Locations</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">Partner offices</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">Terms and Conditions</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">Privacy Policy</li>
+        <li class="hover:text-gray-300 cursor-pointer transition">Our Offering</li>
+      </ul>
+    </div>
+
+    <!-- Our Gyms 1 -->
+    <div class="mx-auto text-start w-[200px]">
+      <h4 class="text-xl font-bold mb-4 uppercase ">Our Gyms</h4>
+      <ul class="space-y-1 text-gray-300 text-sm">
+        <li>Mong Kok</li>
+        <li>Lai Chi Kok</li>
+        <li>Wong Tai Sin</li>
+        <li>Tsuen Wan</li>
+        <li>Yuen Long</li>
+        <li>Kennedy Town</li>
+        <li>North Point</li>
+      </ul>
+    </div>
+
+    <!-- Our Gyms 2 -->
+    <div class="mx-auto text-start w-[200px]">
+      <h4 class="text-xl font-bold mb-4 uppercase ">ONYX Branches</h4>
+      <ul class="space-y-1 text-gray-300 text-sm">
+        <li>Shau Kei Wan</li>
+        <li>ONYX - Admiralty</li>
+        <li>ONYX - Central</li>
+        <li>ONYX Central 2 - LHT Tower</li>
+        <li>ONYX - Taikoo Place</li>
+        <li>ONYX - Wan Chai</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+      
+  </body>
+</html>
