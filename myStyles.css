@@ -24,14 +24,14 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    background-image: url('/img/ghy_logo1.jpg');
+    background-image: url('https://www.go24fitness.com/storage/app/media/gympics/WTS/MAB01424-HDR.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
   }
   .sticky-bg2{
-    background-image: url("/img/gym_img.jpg");
+    background-image: url("https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoiYWR5ZW5cL2ZpbGVcL2hrQ2kxTXdqQTZGdW9temlONENHLmpwZyJ9:adyen:p5VMXi9elqLKaN_SPpEnVB_VSVeuVYg9Lz19KLg78Lc");
 
   }
    .sticky-bg3{
